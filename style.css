@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: #3F1903;
+    background-image: linear-gradient(#AA7045,#3F1903);
+    
+} */
+ 
+
+  
+ 
+
+/* nav section */
+.navContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #4e280e;
+    position: relative;
+}
+img{
+    width: 14vw;
+    height: 12vh;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+   
+}
+nav ul li a{
+    color: #F3753E;
+    text-decoration: none;
+   font-size: 30px;
+}
+
+.menu-icon{
+    display: none;
+  }
+
+  .menu-icon i{
+    color: #fff;
+    font-size: 30px;
+  }
+.btnContact{ 
+    color: white;
+    background-color: #F88332;
+    border-radius: 10px;
+    border: none;
+}
+
+li a:hover, li a:focus{
+   
+    background-color: #F3753E;
+    color:#e7e1dc;
+}
+button:hover{
+    color: #ffffff;
+    background-color: #f34b03;
+}
+
+
+
+
+/* Mobile Device */
+
+@media screen and (max-width: 481px){
+    
+    nav ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    /* img{
+    width: 115px;
+    height: 100px;
+} */
+    .navLogo #logo {
+        margin-left: 20px;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+    }
+   
+    .navul {
+        display: block;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .navul.open {
+        transform: translateX(0);
+      }
+      
+}
+
+
+
+
+
+/* ipads, tables */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    nav ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #744200;
+        gap: 0;
+        overflow: hidden;
+    }
+    .navLogo #logo {
+        margin-left: 20px;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+    }
+   
+    .navul {
+        display: block;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+      }
+      .navul.open {
+        transform: translateX(0);
+      }
+    
+}
+
+
+/*  Small Screen, laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .navContainer{
+        background-color: rgb(187, 36, 142);
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+/*  Desktop, Large Screen*/
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .navContainer{
+        background-color: rgb(187, 36, 36);
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+/*  Extra large screen, TV*/
+@media screen and (min-width: 1201px){
+    .navContainer{
+        background-color: rgb(159, 187, 36);
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main hero section */
+
+/* .mainContainer{
+     width: 100%;
+     height: auto;
+} */
+
+
+/* main picture */
+/* .imgMain{
+    margin-top: 10%;
+    
+    float: right;
+   margin-right: 10%;
+   
+}
+.mainPic{
+    height: 800px;
+    width: 950px;
+} */
+
+/* logo */
+/* #logoMain{
+    height: 250px;
+    width: 300px;
+    margin-top: 5%;
+}
+
+
+
+.textMain{
+    
+    width: 100%;
+    text-align: center;
+    height: auto;
+    
+}
+
+h1, h3, h5, button{
+   
+    color: #fff;
+}
+.h1text{
+    font-size: 130px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    
+}
+.h3text{
+    color: white;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+} 
+ .h5text{
+    color: white;
+   
+    font-size: 80px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.h5text2{
+    color: white;
+    
+    font-size: 80px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.h3text2{
+    color: white;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.mainButton{
+    height: 80px;
+    width: 250px;
+    font-size: 40px;
+    color: white;
+    background-color: #F88332;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    
+}
+.mainButton:hover, .mainButton:focus{
+    background-color: rgb(252, 100, 30);
+}
+ */
+
+
+
+
+/* main menu section */
+
+/* .cardContainer{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.featured{
+    font-size: 100px;
+    font-weight: bold;
+    /* background-color: #00ffb3; */
+    /* text-align: center; 
+    color: #000;
+    margin: 40px;
+} */
+/* .card{
+    border: 1px solid #ece9e9;
+    height: 900px;
+    width: 800px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 3px 5px  gray;
+}
+.imgmenu{
+    height: 600px;
+    width: 600px;
+    margin-left: 20px;
+}
+.card-title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+.btnmoremenu{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 60px;
+    margin-bottom: 30px;
+} */
+
+/* about menu */
+
+
+
+
+/* 
+.aboutContainer{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    position: relative;
+}
+.aboutTitle{
+    font-size: 120px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 10%;
+    right: 0;
+    margin-top: 2%;
+    
+}
+.about{
+    display: inline;
+}
+.aboutpic img{
+    height: 900px;
+    width: 1000px;
+    float: left;
+    margin-top: 50px;
+    position: absolute;
+    left: 50px;
+   
+}
+
+.aboutText{
+    height: auto;
+    right: 0;
+    float: right;
+    text-align: justify;
+    margin-left: 400px;
+    margin-right: 200px;
+
+}
+.aboutHeader{
+    font-size: 80px;
+    white-space: nowrap;
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.about{
+    font-size: 60px;
+    margin: 30px;
+    color: #fff;
+} */
+
+
+/* footer */
+
+/* .title{
+    font-size: 80px;
+}
+.footer{
+    display: flex;
+   
+}
+.title{
+    margin-top: 50px;
+} */
