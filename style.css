@@ -111,7 +111,7 @@ button:hover{
         left: 0;
         right: 0;
         display: block;
-        transform: translateX(100%);
+        transform: translateX(-200%);
         transition: transform 0.3s ease;
         flex-direction: column;
         text-align: center;
