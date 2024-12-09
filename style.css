@@ -17,9 +17,9 @@
     background-color:  #4e280e;
     position: relative;
 }
-img{
-    width: 14vw;
-    height: 12vh;
+#logo {
+    width: 10vw;
+    height: 8vw;
 }
 nav ul {
     display: flex;
@@ -45,21 +45,90 @@ nav ul li a{
     font-size: 30px;
   }
 .btnContact{ 
-    color: white;
+    color: rgb(255, 254, 254);
     background-color: #F88332;
     border-radius: 10px;
     border: none;
+    font-size: 25px;
+    padding: 8px;
+    margin-right: 50px;
+    font-weight: bold;
 }
 
 li a:hover, li a:focus{
    
-    background-color: #F3753E;
-    color:#e7e1dc;
+    text-decoration: underline;
+    color:#d86507;
 }
 button:hover{
     color: #ffffff;
     background-color: #f34b03;
 }
+
+
+
+/* main hero section */
+
+.mainContainer{
+     width: 100%;
+     height: auto;
+     background-color: #8a532f;
+}
+
+.imgMain{
+    width: 50%;
+    float: right;
+   
+}
+
+.textMain{
+    width: 50%;
+    text-align: center;
+}
+.imgMain .mainPic{
+   margin-top: 20%;
+    height: 45vw;
+    width: 45vw;
+}
+#logoMain{
+    margin-top: 5%;
+    width: 12vw;
+    height: 10vw;
+}
+
+h1, h3, h5, button{
+   
+    color: #fdfdfd;
+}
+.whopper{
+    font-size: 8vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.serving, .realness{
+    font-size: 6vw;
+} 
+ .flame, .grilled{
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+.mainButton{
+   padding: 15px 20px;
+    font-size: 4vw;
+    color: white;
+    background-color: #F88332;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+.mainButton:hover, .mainButton:focus{
+    background-color: rgb(252, 100, 30);
+}
+
+
 
 
 
@@ -78,9 +147,13 @@ button:hover{
         transition: transform 0.3s ease;
         flex-direction: column;
         text-align: center;
-        background: #004274;
+        background-color: #3c3e3f;
         gap: 0;
         overflow: hidden;
+    }
+    img{
+        width: 90px;
+        height: 80px;
     }
     .navLogo #logo {
         margin-left: 20px;
@@ -88,6 +161,7 @@ button:hover{
     nav ul li{
         padding: 20px;
         padding-top: 0;
+        width: 100%;
     }
     .menu-icon{
         display: block;
@@ -96,7 +170,27 @@ button:hover{
       .navul.open {
         transform: translateX(0);
       }
-
+      .btnContact{ 
+        color: white;
+        background-color: #F88332;
+        border-radius: 10px;
+        border: none;
+        font-size: 25px;
+        padding: 5px;
+       margin: 0 auto;
+    }
+    
+    li a:hover, li a:focus{
+        
+       background-color: rgb(63, 61, 59);
+       text-decoration: underline;
+        color:#f57e1c;
+    }
+    button:hover{
+        color: #ffffff;
+        background-color: #f34b03;
+    }
+    
 }
 
 
@@ -115,7 +209,7 @@ button:hover{
         transition: transform 0.3s ease;
         flex-direction: column;
         text-align: center;
-        background: #744200;
+        background-color: #3c3e3f;
         gap: 0;
         overflow: hidden;
     }
@@ -133,40 +227,60 @@ button:hover{
       .navul.open {
         transform: translateX(0);
       }
+      .btnContact{ 
+        color: white;
+        background-color: #F88332;
+        border-radius: 10px;
+        border: none;
+        font-size: 25px;
+        padding: 5px;
+       margin: 0 auto;
+    }
+    
+    li a:hover, li a:focus{
+        
+       background-color: rgb(63, 61, 59);
+       text-decoration: underline;
+        color:#f57e1c;
+    }
+    button:hover{
+        color: #ffffff;
+        background-color: #f34b03;
+    }
     
 }
 
 
 /*  Small Screen, laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px){
-    .navContainer{
+    /* .navContainer{
         background-color: rgb(187, 36, 142);
         padding: 0;
         display: flex;
         justify-content: space-between;
-    }
+    } */
     
 }
 
 /*  Desktop, Large Screen*/
 @media screen and (min-width: 1025px) and (max-width: 1200px){
-    .navContainer{
+    /* .navContainer{
         background-color: rgb(187, 36, 36);
         padding: 0;
         display: flex;
         justify-content: space-between;
-    }
+    } */
     
 }
 
 /*  Extra large screen, TV*/
 @media screen and (min-width: 1201px){
-    .navContainer{
+    /* .navContainer{
         background-color: rgb(159, 187, 36);
         padding: 0;
         display: flex;
         justify-content: space-between;
-    }
+    } */
     
 }
 
