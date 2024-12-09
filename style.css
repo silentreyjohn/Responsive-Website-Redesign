@@ -114,7 +114,7 @@ h1, h3, h5, button{
 }
 
 .mainButton{
-   padding: 15px 20px;
+   padding: 2vw 3vw;
     font-size: 4vw;
     color: white;
     background-color: #F88332;
@@ -151,21 +151,18 @@ h1, h3, h5, button{
         gap: 0;
         overflow: hidden;
     }
-    img{
-        width: 90px;
-        height: 80px;
-    }
-    .navLogo #logo {
+    
+    #logo {
         margin-left: 20px;
     }
     nav ul li{
         padding: 20px;
-        padding-top: 0;
+        padding-top: 5px;
         width: 100%;
     }
     .menu-icon{
         display: block;
-        margin-right: 20px;
+        margin: 20px;
     }
       .navul.open {
         transform: translateX(0);
@@ -177,7 +174,7 @@ h1, h3, h5, button{
         border: none;
         font-size: 25px;
         padding: 5px;
-       margin: 0 auto;
+        margin: 0 auto 20px;
     }
     
     li a:hover, li a:focus{
@@ -190,7 +187,10 @@ h1, h3, h5, button{
         color: #ffffff;
         background-color: #f34b03;
     }
-    
+    .imgMain .mainPic{
+        margin-top: 30%;
+         
+     }
 }
 
 
@@ -213,16 +213,16 @@ h1, h3, h5, button{
         gap: 0;
         overflow: hidden;
     }
-    .navLogo #logo {
+    #logo {
         margin-left: 20px;
     }
     nav ul li{
         padding: 20px;
-        padding-top: 0;
+        padding-top: 5px;
     }
     .menu-icon{
         display: block;
-        margin-right: 20px;
+        margin: 20px;
     }
       .navul.open {
         transform: translateX(0);
@@ -234,7 +234,7 @@ h1, h3, h5, button{
         border: none;
         font-size: 25px;
         padding: 5px;
-       margin: 0 auto;
+        margin: 0 auto 20px;
     }
     
     li a:hover, li a:focus{
@@ -244,10 +244,12 @@ h1, h3, h5, button{
         color:#f57e1c;
     }
     button:hover{
-        color: #ffffff;
         background-color: #f34b03;
     }
-    
+    .imgMain .mainPic{
+        margin-top: 25%;
+         
+     }
 }
 
 
