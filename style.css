@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
  }
 
-/* nav section */
+/* Nav Section */
 .navContainer{
     width: 100%;
     display: flex;
@@ -64,10 +64,10 @@ button:hover{
     color: #ffffff;
     background-color: #f34b03;
 }
+/* End of NavBar */
 
 
-
-/* main hero section */
+/* Main Hero Section */
 
 .mainContainer{
      width: 100%;
@@ -115,7 +115,7 @@ h1, h3, h5, button{
 
 .mainButton{
    padding: 2vw 3vw;
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     background-color: #F88332;
     border-radius: 15px;
@@ -127,8 +127,68 @@ h1, h3, h5, button{
 .mainButton:hover, .mainButton:focus{
     background-color: rgb(252, 100, 30);
 }
+/* End of Hero Section */
 
 
+
+
+/* Features Section */
+
+
+.featured{
+    font-size: 5vw;
+    text-wrap: nowrap;
+    font-weight: bold;
+     text-align: center; 
+    color: #000;
+    margin: 20px;
+} 
+.cardArea{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+    
+}
+.card{
+    border: 1px solid #ece9e9;
+    height: 35vw;
+    width: 30vw;
+    margin: 20px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.card-content {
+    margin: 10px auto;
+    text-align: center;
+}
+.imgmenu{
+    height: 20vw; 
+    width: 25vw;
+    margin-bottom: 2vw;
+}
+.card-title{
+    font-size: 2vw;
+    white-space: nowrap;
+}
+.btnbuy{
+    font-size: 2vw;
+    margin: 2vw auto;
+    background-color: #d86507;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btnmoremenu {
+    font-size: 2vw;
+    margin: 10px 40px;
+    float: right;
+    background-color: #d86507;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+/* End of Features Section */
 
 
 
@@ -136,7 +196,7 @@ h1, h3, h5, button{
 /* Mobile Device */
 
 @media screen and (max-width: 481px){
-    
+    /* NavBar  */
     nav ul{
         position: absolute;
         top: 100%;
@@ -170,7 +230,7 @@ h1, h3, h5, button{
       .btnContact{ 
         color: white;
         background-color: #F88332;
-        border-radius: 10px;
+        border-radius: 5px;
         border: none;
         font-size: 25px;
         padding: 5px;
@@ -187,12 +247,24 @@ h1, h3, h5, button{
         color: #ffffff;
         background-color: #f34b03;
     }
+    /* end of NavBar */
+
+    /* Hero Section */
     .imgMain .mainPic{
         margin-top: 30%;
-         
      }
-}
+     .mainButton{
+         border-radius: 5px;
+     }
+     /* End of Hero Section */
 
+
+ 
+     /* End of Features Section */
+
+
+}
+/* End of Mobile Device */
 
 
 
@@ -251,6 +323,8 @@ h1, h3, h5, button{
          
      }
 }
+/* End of ipads, tables */
+
 
 
 /*  Small Screen, laptop*/
@@ -263,6 +337,10 @@ h1, h3, h5, button{
     } */
     
 }
+/*  End of Small Screen, laptop*/
+
+
+
 
 /*  Desktop, Large Screen*/
 @media screen and (min-width: 1025px) and (max-width: 1200px){
@@ -274,6 +352,9 @@ h1, h3, h5, button{
     } */
     
 }
+/*  End of Desktop, Large Screen*/
+
+
 
 /*  Extra large screen, TV*/
 @media screen and (min-width: 1201px){
@@ -285,125 +366,7 @@ h1, h3, h5, button{
     } */
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* main hero section */
-
-/* .mainContainer{
-     width: 100%;
-     height: auto;
-} */
-
-
-/* main picture */
-/* .imgMain{
-    margin-top: 10%;
-    
-    float: right;
-   margin-right: 10%;
-   
-}
-.mainPic{
-    height: 800px;
-    width: 950px;
-} */
-
-/* logo */
-/* #logoMain{
-    height: 250px;
-    width: 300px;
-    margin-top: 5%;
-}
-
-
-
-.textMain{
-    
-    width: 100%;
-    text-align: center;
-    height: auto;
-    
-}
-
-h1, h3, h5, button{
-   
-    color: #fff;
-}
-.h1text{
-    font-size: 130px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 0;
-    
-}
-.h3text{
-    color: white;
-    font-size: 100px;
-    margin-top: 0;
-    margin-bottom: 0;
-   
-} 
- .h5text{
-    color: white;
-   
-    font-size: 80px;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.h5text2{
-    color: white;
-    
-    font-size: 80px;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.h3text2{
-    color: white;
-    font-size: 100px;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.mainButton{
-    height: 80px;
-    width: 250px;
-    font-size: 40px;
-    color: white;
-    background-color: #F88332;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    margin-bottom: 50px;
-    
-}
-.mainButton:hover, .mainButton:focus{
-    background-color: rgb(252, 100, 30);
-}
- */
+/*  End of Extra large screen, TV*/
 
 
 
@@ -421,12 +384,11 @@ h1, h3, h5, button{
 .featured{
     font-size: 100px;
     font-weight: bold;
-    /* background-color: #00ffb3; */
-    /* text-align: center; 
+     text-align: center; 
     color: #000;
     margin: 40px;
-} */
-/* .card{
+} 
+.card{
     border: 1px solid #ece9e9;
     height: 900px;
     width: 800px;
@@ -456,9 +418,10 @@ h1, h3, h5, button{
     margin-bottom: 30px;
 } */
 
+
+
+
 /* about menu */
-
-
 
 
 /* 
