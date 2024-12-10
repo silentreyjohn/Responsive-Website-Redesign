@@ -205,7 +205,7 @@ h1, h3, h5, button{
 /* End of About Menu */
 .aboutContainer{
    background-color: #a1886b;
-    height: 55vw;
+    height: 58vw;
 }
 .aboutTitle{
     font-size: 6vw;
@@ -335,7 +335,7 @@ h1, h3, h5, button{
 }
 .btnmoremenu {
     font-size: 15px;
-    margin: 0px 55px 20px 0px;
+    margin: 0px 40px 20px 0px;
     padding: 5px 15px;
 }
 
