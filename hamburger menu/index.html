@@ -1,39 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Menu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="picture/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- header nav -->
+    <header>
+      <nav class="navContainer">
+        <div class="navlogo">
+          <a href="#" class="aLogo">
+            <img
+              src="picture/logo.jpg"
+              alt="logo"
+              id="logo"
+              width="150px"
+              height="150px"
+            />
+          </a>
+        </div>
+        <ul class="navul">
+          <li class="navItem">
+            <a href="#">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="#">Menu</a>
+          </li>
+          <li class="navItem">
+            <a href="#about">About</a>
+          </li>
 
-  <!-- Hamburger menu button -->
-  <div class="hamburger-menu" id="hamburgerMenu">
-    <div class="bar bar1"></div>
-    <div class="bar bar2"></div>
-    <div class="bar bar3"></div>
-  </div>
+          <button class="btnContact" type="button">Contact</button>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- end of header -->
 
-  <!-- Navigation menu -->
-  <nav id="navMenu" class="nav-menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <main>
+      <!-- hero section -->
 
- liquid soluta enim accusantium ullam aut repellat natus illum animi odit porro praesentium eum. Nemo repudiandae ipsam, deserunt saepe quia quis error pariatur excepturi?</p> -->
+      <div class="mainContainer">
+        <div class="imgMain">
+          <img src="picture/main.png" alt="burger king" class="mainPic" />
+        </div>
 
-  <script> 
-    const hamburgerMenu = document.getElementById('hamburgerMenu');
-    const navMenu = document.getElementById('navMenu');
-    
-    hamburgerMenu.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
+        <div class="textMain">
+          <img src="picture/logo.jpg" alt="burger king logo" id="logoMain" />
+
+          <h1 class="whopper">Whopper</h1>
+
+          <h3 class="serving">SERVING</h3>
+          <h5 class="flame">FLAME</h5>
+          <h5 class="grilled">GRILLED</h5>
+          <h3 class="realness">REALNESS</h3>
+
+          <button class="mainButton">Order Now</button>
+        </div>
+      </div>
+      <!-- end of hero section -->
+
+      <!-- menu section -->
+      <div class="cardContainer">
+        <h1 class="featured">Featured Menu Items</h1>
+
+        <div class="cardArea">
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="imgmenu"
+                src="picture/Bacon-Claw Cheeseburger.webp"
+                alt="Bacon-Claw Cheeseburger"
+              />
+
+              <h2 class="card-title">Bacon-Claw Cheeseburger</h2>
+              <button class="btnbuy">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="imgmenu"
+                src="picture/Chimi-Merc Burger.webp"
+                alt="Chimi-Merc Burger"
+              />
+
+              <h2 class="card-title">Chimi-Merc Burger</h2>
+              <button class="btnbuy">Buy Now</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="imgmenu"
+                src="picture/double deluxe stacker.webp"
+                alt="double deluxe stacker"
+              />
+
+              <h2 class="card-title">double deluxe stacker</h2>
+              <button class="btnbuy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="btnmore">
+          <button class="btnmoremenu">More...</button>
+        </div>
+      </div>
+      <!-- end menu section -->
+
+      <!-- start of about menu -->
+      <div class="aboutContainer" id="about">
+        <h1 class="aboutTitle">About Us</h1>
+
+        <div class="aboutcontent">
+          <div class="aboutimg">
+            <img src="picture/about.png" alt="About picture" class="aboutpic" />
+          </div>
+
+          <div class="aboutText">
+            <h2 class="aboutHeader">Great Food Comes First</h2>
+
+            <p class="about">
+              Burger King is known for serving high-quality, great-tasting, and
+              affordable food. Founded in 1954, Burger King is the second
+              largest fast food hamburger chain in the world. The original Home
+              of the Whopper, our commitment to premium ingredients, signature
+              recipes, and family-friendly dining experiences is what has
+              defined our brand for 70 successful years.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end about menu -->
+    </main>
+
+    <!-- Footer -->
+    <!--footer  -->
+    <footer></footer>
+
+    <!-- End of Footer -->
+
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const navUl = document.querySelector(".navul");
+
+      menuIcon.addEventListener("click", () => {
+        navUl.classList.toggle("open");
+      });
     </script>
-</body>
+  </body>
 </html>
